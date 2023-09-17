@@ -12,3 +12,12 @@ class FibonacciRequest(BaseModel):
             raise ValueError("É esperado um número positivo.")
         return value
     
+    def calculate_fibonacci(self):
+        n = self.n
+        sequence = [0,1]
+        if n <= 2:
+            return sequence[:n]
+        else:
+            while len(sequence) < n:
+                sequence.append(sequence[-1] + sequence[-2])
+            return sequence[:n]
