@@ -5,7 +5,7 @@ from src.schemas.fibonacci_models import FibonacciRequest
 
 api_fibonacci = APIRouter()
 
-@api_fibonacci.post("/fibonacci", response_model=List[int])
+@api_fibonacci.post("/fibonacci", response_model=List[int], summary="Calcula a sequência de Fibonacci", description="Essa rota calcula os n primeiros números da sequência de Fibonacci e retorna numa lista.")
 async def fibonacci_sequence(request: FibonacciRequest):
     try:
         response = request.calculate_fibonacci()

@@ -1,7 +1,8 @@
 from pydantic import BaseModel, validator
 
 class FibonacciRequest(BaseModel):
-    """Modelo para o request do post da sequência de Fibonacci"""
+    """Modelo para o request do post da sequência de Fibonacci
+    O número n deve ser um inteiro maior que 0. """
     n: int
 
     @validator("n")
