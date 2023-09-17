@@ -1,4 +1,5 @@
 from fastapi import APIRouter, Request
+from fastapi.exceptions import HTTPException
 from typing import List
 from src.schemas.fibonacci_models import FibonacciRequest
 
