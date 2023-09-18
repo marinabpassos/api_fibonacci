@@ -6,9 +6,9 @@ Esta é uma API FastAPI que fornece a sequência de Fibonacci.
 
 1. Clone este repositório:
 
-2. Crie um ambiente virtual (recomendado):
-python -m venv venv
-source venv/bin/activate (use o script de activate de acordo com seu sistema operacional. Para Windows usar o Activate.ps1 no PowerShell)
+2. Ative ambiente virtual (recomendado):  
+.venv/bin/activate 
+(use o script de activate de acordo com seu sistema operacional. Para Windows usar o .venv\Scripts\Activate.ps1 no PowerShell)
 
 
 3. Instale as dependências:
@@ -33,7 +33,8 @@ pytest tests/test_fibonaccy.py
 
 ### Usando a imagem Docker
 Você pode usar a imagem Docker desta API para executá-la em um contêiner. Certifique-se de ter o Docker instalado.
-1) Execute o comando de compose para construir e iniciar o contâiner:
+1) Execute o comando de compose para construir e iniciar o contâiner:  
+(O docker deve já estar instalado em sua máquina)
 docker compose up --build
 
 A API estará disponível em http://localhost:8000 dentro do contâiner (http://localhost:8000/docs para acessar o Swagger)
