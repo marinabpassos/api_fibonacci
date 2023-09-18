@@ -38,7 +38,7 @@ docker compose up --build
 
 A API estará disponível em http://localhost:8000 dentro do contâiner (http://localhost:8000/docs para acessar o Swagger)
 
-Para desativar a imagem use Ctrl + C
+Para desativar o uvicorn a qualquer momento, use Ctrl + C
 ### Rota Fibonacci
 
 - **URL**: `api/fibonacci`
