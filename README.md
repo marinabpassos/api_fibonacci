@@ -1,6 +1,6 @@
 # API Fibonacci
 
-Esta é uma API FastAPI que fornece a sequência de Fibonacci.
+Esta é uma API FastAPI que fornece a sequência de Fibonacci. Ela foi feita como exercício para code review.
 
 ## Instalação
 
