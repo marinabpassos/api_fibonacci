@@ -13,7 +13,7 @@ Esta é uma API FastAPI que fornece a sequência de Fibonacci. Ela foi feita com
 Você pode usar a imagem Docker desta API para executá-la em um contêiner. Certifique-se de ter o Docker instalado. Esse é o jeito mais simples de usar a API!
 
 1) Execute o comando de compose para construir e iniciar o contâiner:  
-(O docker deve já estar instalado em sua máquina)
+(O docker deve já estar instalado em sua máquina. Para instalação: https://docs.docker.com/desktop/install/windows-install/)
 docker compose up --build
 
 A API estará disponível em http://localhost:8000 dentro do contâiner (http://localhost:8000/docs para acessar o Swagger)
