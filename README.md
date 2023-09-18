@@ -8,7 +8,7 @@ Esta é uma API FastAPI que fornece a sequência de Fibonacci.
 
 2. Crie um ambiente virtual (recomendado):
 python -m venv venv
-source venv/bin/activate
+source venv/bin/activate (use o script de activate de acordo com seu sistema operacional. Para Windows usar o Activate.ps1 no PowerShell)
 
 
 3. Instale as dependências:
@@ -17,15 +17,22 @@ pip install -r requirements.txt
 
 ## Uso
 
-### Executando a API
+### Executando a API localmente
 
 Para iniciar o servidor da API, você pode usar o Uvicorn:
-uvicorn src.main:app --host 0.0.0.0 --port 8000 --reload
+uvicorn src.main:app --reload
 
 
 
-A API estará disponível em `http://localhost:8000`.
+A API estará disponível em no caminho que aparecerá no seu terminal (normalmente http://127.0.0.1:8000).
+O Swagger estará nesse caminho /docs
 
+### Usando a imagem Docker
+Você pode usar a imagem Docker desta API para executá-la em um contêiner. Certifique-se de ter o Docker instalado.
+1) Execute o comando de compose para construir e iniciar o contâiner:
+docker compose up --build
+
+A API estará disponível em http://localhost:8000 dentro do contâiner (http://localhost:8000/docs para acessar o Swagger)
 ### Rota Fibonacci
 
 - **URL**: `api/fibonacci`
