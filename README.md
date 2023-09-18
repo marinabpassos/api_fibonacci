@@ -27,12 +27,18 @@ uvicorn src.main:app --reload
 A API estará disponível em no caminho que aparecerá no seu terminal (normalmente http://127.0.0.1:8000).
 O Swagger estará nesse caminho /docs
 
+### Executando teste
+Com o venv ativado use o comando
+pytest tests/test_fibonaccy.py
+
 ### Usando a imagem Docker
 Você pode usar a imagem Docker desta API para executá-la em um contêiner. Certifique-se de ter o Docker instalado.
 1) Execute o comando de compose para construir e iniciar o contâiner:
 docker compose up --build
 
 A API estará disponível em http://localhost:8000 dentro do contâiner (http://localhost:8000/docs para acessar o Swagger)
+
+Para desativar a imagem use Ctrl + C
 ### Rota Fibonacci
 
 - **URL**: `api/fibonacci`
